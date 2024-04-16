@@ -4,9 +4,9 @@ function EnamelDeliveries() {
     return (<div className="py-2 h-screen flex flex-col">
        <div className="h-1/6 flex items-center justify-center">
         <div className="join">
-             <button className="join-item btn btn-lg">«</button>
-             <button className="join-item btn btn-lg text-primary">BATEA</button>
-             <button className="join-item btn btn-lg">»</button>
+             <button className="join-item btn btn-lg btn-outline">«</button>
+             <button className="join-item btn btn-lg btn-success">BATEA</button>
+             <button className="join-item btn btn-lg btn-outline">»</button>
         </div>
        </div>
         <div className="flex h-5/6">
@@ -31,23 +31,23 @@ function EnamelDeliveries() {
               <div className="h-[5%] divider divider-horizontal mx-auto"></div>
               <div className="h-[5%]">15:30</div>
             </div>
-            <div className="bg-amber-400 flex-auto flex flex-col">
+            <div className="flex-auto flex flex-col">
                 <div className="h-[5%]"></div>
-                <div className="flex-auto bg-red-200 flex flex-col relative">
+                <div className="flex-auto flex flex-col relative">
                     <div className="absolute w-full flex flex-col top-[10%] space-y-3">
                         <button className="btn btn-outline">RECIBIDO</button>
                         <button className="btn btn-outline">PROCESADO</button>
                     </div>
                 </div>
                 <div className="h-[5%]"></div>
-                <div className="flex-auto bg-red-200 flex flex-col relative">
+                <div className="flex-auto flex flex-col relative">
                     <div className="absolute w-full flex flex-col top-[10%] space-y-3">
                         <button className="btn btn-outline">RECIBIDO</button>
                         <button className="btn btn-outline">PROCESADO</button>
                     </div>
                 </div>
                 <div className="h-[5%]"></div>
-                <div className="flex-auto bg-red-200 flex flex-col relative">
+                <div className="flex-auto flex flex-col relative">
                     <div className="absolute w-full flex flex-col top-[10%] space-y-3">
                         <button className="btn btn-outline">RECIBIDO</button>
                         <button className="btn btn-outline">PROCESADO</button>
