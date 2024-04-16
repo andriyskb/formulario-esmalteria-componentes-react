@@ -1,12 +1,66 @@
 import React from "react";
+import { useState } from "react";
 
 function EnamelDeliveries() {
+    const [datos, setDatos] = useState([
+        {
+            sector: 'BATEA',
+            envios: [
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false}
+            ]
+        },
+        {
+            sector: 'SOPLETE AZUL',
+            envios: [
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false}
+            ]
+        },
+        {
+            sector: 'SOPLETE BK/NEGRO',
+            envios: [
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false}
+            ]
+        },
+        {
+            sector: 'SOPLETE BLANCO',
+            envios: [
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false},
+                {enviado: false, recibido: false}
+            ]
+        },
+    ]);
+
+    const [contador, setContador] = useState(0);
+
+    const sumarContador = () => {
+        if (contador < datos.length) setContador(prev => prev++);
+        else setContador(0);
+        console.log("FUNCIONANDO");
+    }
+    const restarContador = () => {
+        if (contador > 0) setContador(prev => prev--);
+        else setContador(0);
+    }
+    const registrarRecibido = (id) => {
+
+    }
+    const registrarProcesado = (id) => {
+
+    }
+
     return (<div className="py-2 h-screen flex flex-col">
        <div className="h-1/6 flex items-center justify-center">
         <div className="join">
-             <button className="join-item btn btn-lg btn-outline">«</button>
-             <button className="join-item btn btn-lg btn-success">BATEA</button>
-             <button className="join-item btn btn-lg btn-outline">»</button>
+             <button className="join-item btn btn-lg btn-outline" onClick={() => restarContador()}>«</button>
+             <button className="join-item btn btn-lg btn-success">{datos[contador].sector}</button>
+             <button className="join-item btn btn-lg btn-outline" onClick={() => sumarContador()}>»</button>
         </div>
        </div>
         <div className="flex h-5/6">
