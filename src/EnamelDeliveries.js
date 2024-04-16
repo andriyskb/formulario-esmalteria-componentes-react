@@ -1,59 +1,79 @@
 import React from "react";
 
 function EnamelDeliveries() {
-    return (<div className="py-2 h-screen">
-        <div className="text-2xl text-center text-neutral">BATEA</div>
-        <div className="flex h-1/4">
-            <div className="w-1/6 divider divider-horizontal divider-success">06:00</div>
-            <div className="flex-auto flex flex-col justify-center">
-                <div className="h-1/6 text-center font-semibold">
-                    <span>CICLO <span className="text-primary font-bold">1</span></span>
-                </div>
-                <div className="h-1/4 flex justify-around items-center space-x-2">
-                    <div className="text-center flex-1 btn btn-outline">
-                       RECIBIDO 
-                    </div>
-                     <div className="text-center flex-1 btn btn-outline">
-                       PROCESADO 
-                    </div>
-                </div>
-            </div>
-            <div className="w-1/6 divider divider-horizontal divider-success">09:45</div>
+    return (<div className="py-2 h-screen flex flex-col">
+       <div className="h-1/6 flex items-center justify-center">
+        <div className="join">
+             <button className="join-item btn btn-lg">«</button>
+             <button className="join-item btn btn-lg text-primary">BATEA</button>
+             <button className="join-item btn btn-lg">»</button>
         </div>
-        <div className="flex h-1/4">
-            <div className="w-1/6 divider divider-horizontal divider-success">09:45</div>
-            <div className="flex-auto flex flex-col justify-center">
-                <div className="h-1/6 text-center font-semibold">
-                    <span>CICLO <span className="text-primary font-bold">2</span></span>
-                </div>
-                <div className="h-1/4 flex justify-around items-center space-x-2">
-                    <div className="text-center flex-1 btn btn-outline">
-                       RECIBIDO 
-                    </div>
-                     <div className="text-center flex-1 btn btn-outline">
-                       PROCESADO 
-                    </div>
-                </div>
+       </div>
+        <div className="flex h-5/6">
+            <div className="w-1/6 flex flex-col text-center">
+              <div className="h-[5%]">06:00</div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%]">09:45</div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-accent divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%]">12:25</div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%] divider divider-horizontal mx-auto"></div>
+              <div className="h-[5%]">15:30</div>
             </div>
-            <div className="w-1/6 divider divider-horizontal divider-success">12:25</div>
-        </div>
-        <div className="flex h-1/4">
-            <div className="w-1/6 divider divider-horizontal divider-success">12:25</div>
-            <div className="flex-auto flex flex-col justify-center">
-                <div className="h-1/6 text-center font-semibold">
-                    <span>CICLO <span className="text-primary font-bold">3</span></span>
-                </div>
-                <div className="h-1/4 flex justify-around items-center space-x-2">
-                    <div className="text-center flex-1 btn btn-outline">
-                       RECIBIDO 
-                    </div>
-                     <div className="text-center flex-1 btn btn-outline">
-                       PROCESADO 
+            <div className="bg-amber-400 flex-auto flex flex-col">
+                <div className="h-[5%]"></div>
+                <div className="flex-auto bg-red-200 flex flex-col relative">
+                    <div className="absolute w-full flex flex-col top-[10%] space-y-3">
+                        <button className="btn btn-outline">RECIBIDO</button>
+                        <button className="btn btn-outline">PROCESADO</button>
                     </div>
                 </div>
+                <div className="h-[5%]"></div>
+                <div className="flex-auto bg-red-200 flex flex-col relative">
+                    <div className="absolute w-full flex flex-col top-[10%] space-y-3">
+                        <button className="btn btn-outline">RECIBIDO</button>
+                        <button className="btn btn-outline">PROCESADO</button>
+                    </div>
+                </div>
+                <div className="h-[5%]"></div>
+                <div className="flex-auto bg-red-200 flex flex-col relative">
+                    <div className="absolute w-full flex flex-col top-[10%] space-y-3">
+                        <button className="btn btn-outline">RECIBIDO</button>
+                        <button className="btn btn-outline">PROCESADO</button>
+                    </div>
+                </div>
+                <div className="h-[5%]"></div>
+                <div className="h-[5%]"></div>
             </div>
-            <div className="w-1/6 divider divider-horizontal divider-success">15:30</div>
+            <div className="w-1/6 flex flex-col">
+               <div className="h-[5%]"></div> 
+               <div className="flex-auto flex">
+                    <div className="h-1/2 flex-1 self-center btn text-xl mx-2">1</div>
+                </div> 
+               <div className="h-[5%]"></div> 
+               <div className="flex-auto flex">
+                    <div className="h-1/2 flex-1 self-center btn text-xl mx-2">2</div>
+                </div> 
+               <div className="h-[5%]"></div> 
+               <div className="flex-auto flex">
+                    <div className="h-1/2 flex-1 self-center btn text-xl mx-2">3</div>
+                </div> 
+               <div className="h-[5%]"></div> 
+               <div className="h-[5%]"></div> 
+            </div>
         </div>
+        
     </div>)
 }
 
