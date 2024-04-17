@@ -81,7 +81,7 @@ function EnamelDeliveries() {
                 })}
             </div>
             <div className='h-1/6 flex items-center justify-center w-full'>
-                <div className='join'>
+                <div className='join w-full'>
                     <button
                         className='join-item btn btn-lg btn-outline w-1/4'
                         onClick={() => restarContador()}>
